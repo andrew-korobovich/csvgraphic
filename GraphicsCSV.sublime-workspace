@@ -1,0 +1,990 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"D",
+				"Double\t[Standard Apex Class]"
+			],
+			[
+				"lo",
+				"longtitude"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"ali",
+				"align-content"
+			],
+			[
+				"sub",
+				"sublt"
+			],
+			[
+				"La",
+				"Law_Type_Group__c"
+			],
+			[
+				"isNo",
+				"PUBLIC isNotBlank(String str) \tBoolean"
+			],
+			[
+				"aC",
+				"Account"
+			],
+			[
+				"s",
+				"solicitorsIdList"
+			],
+			[
+				"ac",
+				"Active__c"
+			],
+			[
+				"Law",
+				"LawTypesWrapper"
+			],
+			[
+				"subL",
+				"subLawTypeMap"
+			],
+			[
+				"case",
+				"caseList"
+			],
+			[
+				"St",
+				"System\t[Standard Apex Class]"
+			],
+			[
+				"re",
+				"reRender\t(Object)"
+			],
+			[
+				"inp",
+				"apex:inputField"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"fiels",
+				"fieldsList"
+			],
+			[
+				"f",
+				"field"
+			],
+			[
+				"S",
+				"String\t[Standard Apex Class]"
+			],
+			[
+				"sa",
+				"schemaFieldMap"
+			],
+			[
+				"sO",
+				"SObjectType"
+			],
+			[
+				"get",
+				"PUBLIC getRecord() \tSObject"
+			],
+			[
+				"Pa",
+				"PageReference\t[Standard Apex Class]"
+			],
+			[
+				"comman",
+				"apex:commandLink"
+			],
+			[
+				"on",
+				"onclick\t(String)"
+			],
+			[
+				"c",
+				"apex:commandButton"
+			],
+			[
+				"page",
+				"apex:pageBlockSection"
+			],
+			[
+				"pageB",
+				"apex:pageBlock"
+			],
+			[
+				"out",
+				"apex:outputPanel"
+			],
+			[
+				"m",
+				"apex:messages"
+			],
+			[
+				"actio",
+				"apex:actionRegion"
+			],
+			[
+				"A",
+				"ApexPages\t[Standard Apex Class]"
+			],
+			[
+				"Cas",
+				"CaseName"
+			],
+			[
+				"C",
+				"Case__c"
+			],
+			[
+				"ou",
+				"apex:outputText"
+			],
+			[
+				"in",
+				"apex:inputField"
+			],
+			[
+				"t",
+				"tabStyle\t(String)"
+			],
+			[
+				"la",
+				"apex:outputLabel"
+			],
+			[
+				"pageBl",
+				"apex:pageBlockTable"
+			],
+			[
+				"te",
+				"apex:inputTextarea"
+			],
+			[
+				"GET",
+				"PUBLIC get(Integer index) \tObject"
+			],
+			[
+				"L",
+				"LegalCaseInvoice__c"
+			],
+			[
+				"PA",
+				"padding-top"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"b",
+				"bottom"
+			],
+			[
+				"u",
+				"apex:outputPanel"
+			],
+			[
+				"o",
+				"apex:outputPanel"
+			],
+			[
+				"E",
+				"EncodingUtil\t[Standard Apex Class]"
+			],
+			[
+				"DE",
+				"PUBLIC deserialize(String jsonString, system.Type apexType) \tObject"
+			],
+			[
+				"res",
+				"resultString"
+			],
+			[
+				"read",
+				"reader"
+			],
+			[
+				"file",
+				"files"
+			],
+			[
+				"ge",
+				"getBase64"
+			],
+			[
+				"Auto",
+				"Authorization"
+			],
+			[
+				"e",
+				"email"
+			],
+			[
+				"Sty",
+				"System\t[Standard Apex Class]"
+			],
+			[
+				"NUM",
+				"numCandidates"
+			],
+			[
+				"JS",
+				"JSON\t[Standard Apex Class]"
+			],
+			[
+				"mag",
+				"margin-left"
+			],
+			[
+				"attachment",
+				"attachmentsToInsert"
+			],
+			[
+				"att",
+				"Attachment"
+			],
+			[
+				"pr",
+				"parId"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"labe",
+				"labels"
+			],
+			[
+				"object",
+				"objectId"
+			],
+			[
+				"U",
+				"URI_REGISTER"
+			],
+			[
+				"a",
+				"AbstractExternalService"
+			],
+			[
+				"UR",
+				"URI_REGISTER"
+			],
+			[
+				"co",
+				"connection"
+			],
+			[
+				"PR",
+				"PREFIX_URL"
+			],
+			[
+				"d",
+				"DEFAULT_URL"
+			],
+			[
+				"In",
+				"Integer\t[Standard Apex Class]"
+			],
+			[
+				"ol",
+				"oldProducts"
+			],
+			[
+				"p",
+				"PUBLIC put(ANY key, ANY value) \tString"
+			],
+			[
+				"json",
+				"jsonToSend"
+			],
+			[
+				"se",
+				"sendTop"
+			],
+			[
+				"js",
+				"jsonToSend"
+			],
+			[
+				"wra",
+				"wrappersList"
+			],
+			[
+				"w",
+				"wrappersList"
+			],
+			[
+				"W",
+				"WrappersList"
+			],
+			[
+				"Top",
+				"TopSoldWrapper"
+			],
+			[
+				"pro",
+				"prods"
+			],
+			[
+				"new",
+				"newProd"
+			],
+			[
+				"n",
+				"newProducts"
+			],
+			[
+				"ex",
+				"External_Id__c"
+			],
+			[
+				"PRO",
+				"product"
+			],
+			[
+				"Pr",
+				"Product__c"
+			],
+			[
+				"Us",
+				"UserInfo\t[Standard Apex Class]"
+			],
+			[
+				"REQ",
+				"req1"
+			],
+			[
+				"prod",
+				"prodNames"
+			],
+			[
+				"P",
+				"Product__c"
+			],
+			[
+				"H",
+				"Hours__c"
+			],
+			[
+				"mate",
+				"materials"
+			],
+			[
+				"MAT",
+				"matExist"
+			],
+			[
+				"B",
+				"Boolean\t[Standard Apex Class]"
+			],
+			[
+				"fro",
+				"for"
+			],
+			[
+				"wo",
+				"works"
+			],
+			[
+				"mat",
+				"matExist"
+			],
+			[
+				"q",
+				"Quantity__c"
+			],
+			[
+				"Hour",
+				"hourExist"
+			],
+			[
+				"Q",
+				"Quantity__c"
+			],
+			[
+				"Da",
+				"Database\t[Standard Apex Class]"
+			],
+			[
+				"des",
+				"deserializeData"
+			],
+			[
+				"pho",
+				"photoMap"
+			],
+			[
+				"Obj",
+				"Object"
+			],
+			[
+				"Conta",
+				"Contact__c"
+			],
+			[
+				"ser",
+				"serProd"
+			],
+			[
+				"Product",
+				"Product__c"
+			],
+			[
+				"DtaT",
+				"Datetime\t[Standard Apex Class]"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"i",
+				"id"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"Ima",
+				"imageIds"
+			],
+			[
+				"sc",
+				"scope"
+			],
+			[
+				"row",
+				"rows"
+			],
+			[
+				"Pro",
+				"ProductWrapper"
+			],
+			[
+				"CUR",
+				"cur"
+			],
+			[
+				"CU",
+				"cur"
+			],
+			[
+				"v",
+				"Valuta"
+			],
+			[
+				"J",
+				"JSON\t[Standard Apex Class]"
+			],
+			[
+				"us",
+				"USD"
+			],
+			[
+				"SU",
+				"PUBLIC substringAfter(String separator) \tString"
+			],
+			[
+				"my",
+				"myJson"
+			],
+			[
+				"set",
+				"PUBLIC setMethod(String method) \tvoid"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control:",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 440.0
+	},
+	"console":
+	{
+		"height": 216.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/User/Documents/GraphicsCSV",
+		"/C/Users/User/Documents/GraphicsCSV/src"
+	],
+	"file_history":
+	[
+		"/C/Users/User/Downloads/c-impsave6pgf1ff.xls",
+		"/C/Users/User/Documents/WestBrook/debug/logs/2016-12-02 16-00-43.log",
+		"/C/Users/User/Documents/WestBrook/src/classes/CaseTriggerHelper.cls",
+		"/C/Users/User/Documents/WestBrook/src/pages/CaseSolicitorPage.page",
+		"/C/Users/User/Documents/WestBrook/src/classes/CaseSolicitorPageExt.cls",
+		"/C/Users/User/Documents/WestBrook/src/classes/SolicitorFinderTest.cls",
+		"/C/Users/User/Documents/WestBrook/src/classes/SolicitorFinder.cls",
+		"/C/Users/User/Documents/WestBrook/src/classes/AddressHandler.cls",
+		"/C/Users/User/Documents/WestBrook/src/classes/CaseTriggerHelperTest.cls",
+		"/C/Users/User/Documents/WestBrook/src/classes/SolicotorFinderTest.cls",
+		"/C/Users/User/Documents/WestBrook/src/pages/CaseSolicitorPage.page-meta.xml",
+		"/C/Users/User/Documents/WestBrook/src/classes/SolicitorFinder .cls",
+		"/C/Users/User/Documents/WestBrook/src/classes/AddressHandlerHttpMock.cls",
+		"/C/Users/User/Documents/WestBrook/src/classes/AddressHandlerTest.cls",
+		"/C/Users/User/Documents/WestBrook/src/triggers/CaseTrigger.trigger",
+		"/C/Users/User/Documents/WestBrook/src/classes/CommunitiesLoginController.cls",
+		"/C/Users/User/Documents/DT new/src/pages/Legal_To_Related_Legal.page-meta.xml",
+		"/C/Users/User/Documents/DT new/src/pages/Legal_To_Related_Legal.page",
+		"/C/Users/User/Documents/DT new/src/classes/RelatedLegacCtrl.cls",
+		"/C/Users/User/Documents/DT new/src/pages/Legal_Case_Page_Layout.page",
+		"/C/Users/User/Documents/DT new/src/pages/Fraud_To_Claim_Flow.page-meta.xml",
+		"/C/Users/User/Documents/DT new/src/classes/NewWorkDoneCtrl.cls",
+		"/C/Users/User/Documents/DT new/src/pages/Fraud_To_Legal_Flow.page",
+		"/C/Users/User/Documents/DT new/src/pages/Fraud_Bribery_Layout.page",
+		"/C/Users/User/Documents/DT new/src/pages/Fraud_To_Claim_Flow.page",
+		"/C/Users/User/Documents/DT new/src/classes/AttachmentsBlob.cls",
+		"/C/Users/User/Documents/DT new/src/classes/AttachmentsRest.cls",
+		"/C/Users/User/Documents/DT new/src/components/tstComp.component",
+		"/C/Users/User/Documents/DT new/src/pages/NewWorkDone.page",
+		"/C/Users/User/Documents/DT new/src/triggers/WorkdoneCurrencyToDKK.trigger",
+		"/C/Users/User/Documents/DT new/src/triggers/ConvertToDkk.trigger",
+		"/C/Users/User/Documents/DT new/src/triggers/AutoCreateClaimTransaction.trigger",
+		"/C/Users/User/Documents/DT new/src/triggers/AutoCreateClaimTransaction.trigger-meta.xml",
+		"/C/Users/User/Documents/DT new/src/triggers/PopulateUserDivision.trigger",
+		"/C/Users/User/Documents/DT new/src/classes/HRCaseAdjusterNoteInboundEmailHandler.cls",
+		"/C/Users/User/Documents/DT new/src/classes/AdjusterNoteInboundEmailHandler_LC.cls",
+		"/C/Users/User/Documents/DT new/src/classes/AdjusterNoteInboundEmailHandler.cls",
+		"/C/Users/User/Documents/DT new/src/classes/AttachmentController.cls",
+		"/C/Users/User/Documents/DT new/src/pages/HRCase_Layout.page",
+		"/C/Users/User/Documents/DT new/src/components/tstComp.component-meta.xml",
+		"/C/Users/User/Documents/DT new/src/pages/AdjusterNotesResultsPDF.page",
+		"/C/Users/User/Documents/DT new/src/pages/AdjusterFunctionsDashboard.page",
+		"/C/Users/User/Documents/DT new/src/pages/AdjusterNotesDialog.page",
+		"/C/Users/User/Desktop/Node JS Projects/task/app.js",
+		"/C/Users/User/Desktop/Node JS Projects/tut/package.json",
+		"/C/Users/User/Desktop/Node JS Projects/task/package.json",
+		"/C/Users/User/Downloads/email-builder-master-62e5841e0e978252176849f7478af20a3ced67f2/package.json",
+		"/C/Users/User/Documents/PashasProject/src/pages/DialerSidebarPage.page-meta.xml",
+		"/C/Users/User/Documents/PashasProject/src/pages/DialerSidebarPage.page",
+		"/D/page.html",
+		"/C/Users/User/Documents/PashasProject/src/classes/DialerSidebarControllerTest.cls",
+		"/C/Users/User/Documents/PashasProject/src/classes/DialerSidebarController.cls",
+		"/C/Users/User/Documents/PashasProject/src/classes/CallciaPostInstall.cls",
+		"/C/Users/User/Documents/PashasProject/src/classes/ConnectionConfigProvider.cls",
+		"/C/Users/User/Documents/PashasProject/src/classes/CiaTaskCreatorTest.cls-meta.xml",
+		"/C/Users/User/Desktop/tut/package.json",
+		"/C/Users/User/Desktop/tut/app.js",
+		"/C/Users/User/Desktop/app.js",
+		"/C/Users/User/Documents/Manufacture/src/classes/Stat.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/ExternalService.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/PostInstall.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/SendTopSolds.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/DetailsController.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/StoreController.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/TaskCreator.cls",
+		"/C/Users/User/Documents/Manufacture/src/triggers/AddPictureTrigger.trigger",
+		"/C/Users/User/Documents/Manufacture/src/components/Good.component",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/SublimeAStyleFormatter/SublimeAStyleFormatter.sublime-settings",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/SublimeAStyleFormatter.sublime-settings",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/User/Documents/Manufacture/src/classes/DetailsControllerTest.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/GoodController.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/MockHttpResponse.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/NewProductBatch.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/MockHttpRes.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/DistributorScheduler.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/DistributorTest.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/GenerateTestData.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/MaterialShduler.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/SmallTests.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/StatTest.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/StoreControllerTest.cls",
+		"/C/Users/User/my-app/node_modules/express/package.json",
+		"/C/Users/User/Documents/Manufacture/src/classes/TopProductsSchedule.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/PhotoWrapper.cls",
+		"/C/Users/User/Documents/Manufacture/src/pages/Details.page",
+		"/C/Users/User/Documents/Manufacture/src/classes/Distributor.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/ChangePasswordController.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/ChangePasswordControllerTest.cls",
+		"/C/Users/User/Documents/Manufacture/src/pages/Response.page",
+		"/C/Users/User/Documents/Manufacture/src/pages/AmountErr.page",
+		"/C/Users/User/Documents/Manufacture/src/classes/SimpleContactController.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/Distributor.cls-meta.xml",
+		"/C/Users/User/Documents/Manufacture/src/classes/WorkScheduler.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/WorkBatch.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/ProductSchedule.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/MaterialBatch.cls",
+		"/C/Users/User/Documents/Manufacture/src/package.xml",
+		"/C/Users/User/Documents/Manufacture/src/classes/HerokuCallout.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/DepoingSchedule.cls",
+		"/C/Users/User/Documents/Manufacture/src/classes/AutoApprover.cls",
+		"/C/Users/User/Documents/Manufacture/src/triggers/ApprovalTrigger.trigger",
+		"/D/index.html",
+		"/C/Users/User/Desktop/tut/myApp.js",
+		"/C/Users/User/Documents/Manufacture/src/classes/ReportSender.cls",
+		"/C/Users/User/Documents/Manufacture/src/triggers/HerikuCalloutTrigger.trigger-meta.xml",
+		"/C/Users/User/Documents/Manufacture/src/triggers/HerikuCalloutTrigger.trigger",
+		"/C/Users/User/Documents/TestProject/src/classes/ProdListController.cls",
+		"/C/Users/User/Documents/TestProject/src/triggers/TriggerForHeroku.trigger-meta.xml",
+		"/C/Users/User/Documents/TestProject/src/triggers/TriggerForHeroku.trigger",
+		"/C/Users/User/Documents/TestProject/src/classes/HerokuCall.cls",
+		"/C/Users/User/Documents/TestProject/src/pages/ProductsList.page",
+		"/C/Users/User/Documents/TestProject/src/pages/Table.page",
+		"/C/Users/User/Documents/TestProject/src/classes/BuyController.cls",
+		"/C/Users/User/Documents/TestProject/src/classes/CurencyHttpCallOut.cls",
+		"/C/Users/User/Documents/TestProject/src/classes/BuyPController.cls",
+		"/C/Users/User/Documents/TestProject/src/classes/Valuta.cls",
+		"/C/Users/User/Documents/TestProject/src/pages/BuyProd.page",
+		"/C/Users/User/Documents/TestProject/src/classes/DiscountBatch.cls",
+		"/C/Users/User/Documents/TestProject/src/triggers/ProdStore.trigger",
+		"/C/Users/User/Documents/TestProject/src/triggers/RestrictContactByName.trigger",
+		"/C/Users/User/Documents/TestProject/src/triggers/MatShop.trigger",
+		"/C/Users/User/Documents/TestProject/src/classes/DetailsConroller.cls",
+		"/C/Users/User/Documents/TestProject/src/classes/SimpleContactController.cls",
+		"/C/Users/User/Documents/TestProject/src/components/SimpleContact.component-meta.xml",
+		"/C/Users/User/Documents/TestProject/src/classes/TestCont.cls",
+		"/C/Users/User/Documents/TestProject/src/classes/VerifyDateTest.cls",
+		"/C/Users/User/Documents/TestProject/src/classes/TestDetails.cls-meta.xml"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ResultWrapper",
+			"process",
+			"Name",
+			"check",
+			"slice",
+			"sort",
+			"/>\n",
+			"//<",
+			"readfiles",
+			"readfilesIE",
+			";\n",
+			"uploadStatus",
+			"%",
+			"files",
+			"resolvedLegalCase",
+			"Syste",
+			"test",
+			"progress",
+			"#progress",
+			"progress",
+			"uploadStatus",
+			"color",
+			"parentId",
+			"DragAndDropRESTAPI",
+			"is",
+			"Financial Information",
+			"Fin",
+			"Lawy",
+			"oner",
+			"createCallTask",
+			"createTask",
+			"defer",
+			"saveNoteForContact",
+			"objectId",
+			"saveNoteForContact",
+			"saveNotes",
+			"saveN",
+			";\n",
+			"valueOf"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.MavensMate-OutputPanel":
+	{
+		"height": 130.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "GraphicsCSV.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"cases",
+				"src\\classes\\CaseSolicitorPageExt.cls"
+			],
+			[
+				"case",
+				"src\\classes\\CaseTriggerHelper.cls"
+			],
+			[
+				"solic",
+				"src\\classes\\SolicitorFinderTest.cls"
+			],
+			[
+				"cs",
+				"src\\pages\\CaseSolicitorPage.page"
+			],
+			[
+				"soli",
+				"src\\classes\\SolicitorFinder.cls"
+			],
+			[
+				"cas",
+				"src\\classes\\CaseSolicitorPageExt.cls"
+			],
+			[
+				"pageext",
+				"src\\classes\\CaseSolicitorPageExt.cls"
+			],
+			[
+				"add",
+				"src\\classes\\AddressHandler.cls"
+			],
+			[
+				"sol",
+				"src\\classes\\SolicitorFinder.cls"
+			],
+			[
+				"ex",
+				"src\\classes\\CaseSolicitorPageExt.cls"
+			],
+			[
+				"lega",
+				"src\\pages\\Legal_Case_Page_Layout.page"
+			],
+			[
+				"relatedlegacctrl",
+				"src\\classes\\RelatedLegacCtrl.cls"
+			],
+			[
+				"legal",
+				"src\\pages\\Legal_To_Related_Legal.page"
+			],
+			[
+				"",
+				"src\\classes\\NewWorkDoneCtrl.cls"
+			],
+			[
+				"newwork",
+				"src\\classes\\NewWorkDoneCtrl.cls"
+			],
+			[
+				"legaltore",
+				"src\\pages\\Legal_To_Related_Legal.page"
+			],
+			[
+				"legalt",
+				"src\\pages\\Legal_To_Related_Legal.page-meta.xml"
+			],
+			[
+				"new",
+				"src\\classes\\NewWorkDoneCtrl.cls"
+			],
+			[
+				"res",
+				"src\\classes\\AttachmentsRest.cls"
+			],
+			[
+				"tst",
+				"src\\components\\tstComp.component"
+			],
+			[
+				"page",
+				"src\\pages\\Legal_Case_Page_Layout.page"
+			],
+			[
+				"hrcaseadjusternoteinboundemailhandler",
+				"src\\classes\\HRCaseAdjusterNoteInboundEmailHandler.cls"
+			],
+			[
+				"adjusternoteinboundemailhandler_lc",
+				"src\\classes\\AdjusterNoteInboundEmailHandler_LC.cls"
+			],
+			[
+				"adjusternoteinboundemailhandler",
+				"src\\classes\\AdjusterNoteInboundEmailHandler.cls"
+			],
+			[
+				"adjuster",
+				"src\\classes\\AdjusterNoteInboundEmailHandler.cls"
+			],
+			[
+				"adjustern",
+				"src\\classes\\AdjusterNoteInboundEmailHandler_LC.cls"
+			],
+			[
+				"page_l",
+				"src\\pages\\Legal_Case_Page_Layout.page"
+			],
+			[
+				"rest",
+				"src\\classes\\AttachmentsRest.cls"
+			],
+			[
+				"discountbatch",
+				"src\\classes\\DiscountBatch.cls"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 616.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

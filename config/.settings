@@ -1,0 +1,17 @@
+{
+    "projectName": "GraphicsCSV",
+    "username": "andrey.korobovich@production.com",
+    "id": "2f161b60-dc93-11e6-be90-4bf10e2543e1",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://korobovich-dev-ed.my.salesforce.com",
+    "workspace": "C:\\Users\\User\\Documents",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}

@@ -1,0 +1,165 @@
+<apex:page showHeader="true" sidebar="true" controller="CsvReader">
+<style>
+            #holder {
+            border: 2px dashed #ccc;
+            width: 98%;
+            height:100%;
+            margin-left: 1%;
+            background-color:#c6ffb3;
+            -webkit-border-radius: 8px 8px 8px 8px;
+            border-radius: 8px 8px 8px 8px;
+            text-align: center;
+            padding-top: 20px;
+            }
+            #holder span, #uploadCompleted span {
+            position: relative;
+            top: 30%;
+            transform: translateY(-50%);
+            text-shadow: 2px 2px 2px #525252;
+            font-size:3em;
+            color:#ffffff;
+            }
+      
+</style>
+<apex:stylesheet value="{!URLFOR($Resource.Bootstrap)}"/>
+<article class="dragDropComponentSize" id="dndContainer" >
+	<apex:form > 
+		<div id="holder">
+        	<span id="holder_txt1" style ="pointer-events: none;"><label> Drag your CSV here </label></span>
+        	<span id="holder_txt2" style ="pointer-events: none;" class="hidden"><label>Upload...</label></span>
+    	</div>
+	</apex:form>
+</article>
+    <div id="primaryInfo"></div>   
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    <div id="forTaxes"></div>
+
+<apex:includeScript value="{!$Resource.CanvasJS}"/>
+<script type="text/javascript">
+    var revenueChart;
+    var taxes;
+  	var holder = document.getElementById('holder');
+    var holder_txt1 = document.getElementById('holder_txt1');
+    var holder_txt2 = document.getElementById('holder_txt2');
+
+	function textBeforeDrag(flag){
+    if(flag)
+    	{
+       		holder_txt1.className = '';
+        	holder_txt2.className = 'hidden';
+    	}	else{
+        	holder_txt1.className = 'hidden';
+        	holder_txt2.className = '';
+    	}
+	}
+	function readfiles(file) {
+		console.log(file);
+		Visualforce.remoting.Manager.invokeAction(
+			'{!$RemoteAction.CsvReader.readFile}',
+			file,
+			function(result, event){
+				if (event.status) {
+					console.log("Success");
+                    var arrData = createArrayData(result);
+                    drawGraphic(arrData);
+                    calculateTaxes(result);
+				}
+			},
+            {escape: false}
+		);
+	}
+
+
+    function calculateTaxes(result){
+        console.log(result);
+        var salary = 0;
+        for(var i =0; i < result.length; i++){
+            if( parseFloat(result[i].operationSumm) > 0 ){
+                salary = salary+ parseFloat(result[i].operationSumm);
+            }
+        }
+        taxes = salary*13/100;
+        var taxesDiv = document.getElementById("forTaxes");
+        taxesDiv.innerHTML = '<div class="card card-inverse card-success mb-3 text-center"><div class="card-block"><blockquote class="card-blockquote"><p><h2> Tax amount for the selected period is: ' + taxes +' USD </h2></p></blockquote></div></div>';
+    }
+
+    function createArrayData(data){
+        var finalArr = [];
+        for(var i =0; i < data.length; i++){
+            var date = data[i].operationDate;
+            var endIndex = date.indexOf(" ");
+            date = date.substr(0,endIndex);
+            var dateArr = date.split('.');
+            var day = parseInt(dateArr[0]);
+            var mount = parseInt(dateArr[1]) - 1;
+            var year = parseInt(dateArr[2]);
+            var balance = data[i].balance;
+            balance = balance.substr(0, balance.length-2);
+            if(balance == ""){
+                balance = 0.00;
+            }
+            var item ={ x : new Date(year,mount,day ), y :  parseFloat(balance) };
+            finalArr.unshift(item);
+        }
+        return finalArr;
+    }
+
+function drawGraphic(data){
+       var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+        text: "Balance"
+    },
+    axisX:{
+        title: "Date",
+        gridThickness: 2
+    },
+    axisY: {
+        title: "Cash USD"
+    },
+    data: [
+    {        
+        type: "area",
+        dataPoints: data
+    }
+    ]
+});
+
+    chart.render();
+};
+
+
+	function getBase64(file) {
+        var reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = function () {
+          readfiles(reader.result);
+         };
+         reader.onerror = function (error) {
+           console.log('Error: ', error);
+         };
+    }
+
+
+  	holder.ondragover = function () {
+        this.className = 'hover';
+        textBeforeDrag(false);
+        return false;
+    };
+ 	 holder.ondragleave = function(){
+        this.className = 'hover';
+        textBeforeDrag(true);
+        return false;
+    };
+ 	 holder.ondragend = function () {
+        this.className = '';
+        textBeforeDrag(true);
+        return false;
+    };
+  	holder.ondrop = function (e) {
+  		getBase64(e.dataTransfer.files[0]);
+        textBeforeDrag(true);
+        this.className = '';
+     };
+</script>
+</apex:page>
