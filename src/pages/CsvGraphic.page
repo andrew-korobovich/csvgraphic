@@ -1,5 +1,46 @@
-<apex:page showHeader="true" sidebar="true" controller="CsvReader">
+<apex:page showHeader="false" sidebar="true" controller="CsvReader">
 <style>
+
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+            .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+            }  
+
+            .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            }   
+            .close:hover,
+            .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            }        
             #holder {
             border: 2px dashed #ccc;
             width: 98%;
@@ -19,9 +60,32 @@
             font-size:3em;
             color:#ffffff;
             }
+            .modal-header {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+            }
+            .modal-body {padding: 2px 16px;}            
+
+            .modal-footer {
+                padding: 2px 16px;
+                background-color: #5cb85c;
+                color: white;
+            @-webkit-keyframes animatetop {
+            from {top:-300px; opacity:0} 
+            to {top:0; opacity:1}
+            }
+
+            @keyframes animatetop {
+            from {top:-300px; opacity:0}
+            to {top:0; opacity:1}
+            }   
+}
       
 </style>
 <apex:stylesheet value="{!URLFOR($Resource.Bootstrap)}"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 <article class="dragDropComponentSize" id="dndContainer" >
 	<apex:form > 
 		<div id="holder">
@@ -34,13 +98,42 @@
     <div id="chartContainer" style="height: 300px; width: 100%;"></div>
     <div id="forTaxes"></div>
 
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+        <div id="modalheader"></div>
+    </div>
+    <div class="modal-body" id="modalbody">
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div>
+</div>
+
 <apex:includeScript value="{!$Resource.CanvasJS}"/>
 <script type="text/javascript">
     var revenueChart;
     var taxes;
+    var original;
+    var mounths = ["Jan", "Feb", "Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   	var holder = document.getElementById('holder');
     var holder_txt1 = document.getElementById('holder_txt1');
     var holder_txt2 = document.getElementById('holder_txt2');
+    var modal = document.getElementById('myModal');
+    var span = document.getElementsByClassName("close")[0];
+
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 
 	function textBeforeDrag(flag){
     if(flag)
@@ -60,6 +153,7 @@
 			function(result, event){
 				if (event.status) {
 					console.log("Success");
+                    original = result;
                     var arrData = createArrayData(result);
                     drawGraphic(arrData);
                     calculateTaxes(result);
@@ -71,7 +165,6 @@
 
 
     function calculateTaxes(result){
-        console.log(result);
         var salary = 0;
         for(var i =0; i < result.length; i++){
             if( parseFloat(result[i].operationSumm) > 0 ){
@@ -87,21 +180,57 @@
         var finalArr = [];
         for(var i =0; i < data.length; i++){
             var date = data[i].operationDate;
-            var endIndex = date.indexOf(" ");
-            date = date.substr(0,endIndex);
             var dateArr = date.split('.');
             var day = parseInt(dateArr[0]);
             var mount = parseInt(dateArr[1]) - 1;
-            var year = parseInt(dateArr[2]);
+            var endIndex = String(dateArr[2]).indexOf(" ");
+            var year = parseInt(String(dateArr[2]).substr(0, endIndex))
+
+            var times = String(dateArr[2]).substr(endIndex);
+            var time = String(times).split(":");
+            var hour = time [0];
+            var minute = time [1];
+            var second = time [2];
             var balance = data[i].balance;
             balance = balance.substr(0, balance.length-2);
             if(balance == ""){
                 balance = 0.00;
             }
-            var item ={ x : new Date(year,mount,day ), y :  parseFloat(balance) };
+            var item ={ x : new Date(year,mount,day,hour, minute, second), y :  parseFloat(balance),click: onClick };
             finalArr.unshift(item);
         }
         return finalArr;
+    }
+
+    function onClick(e){
+        var date = e.dataPoint.x;
+        var datemas = date.toString().split(" ");
+        var time = datemas[4];
+        var day = datemas[2];
+        var year = datemas[3];
+        var mounthsName = datemas[1];
+        var mounth = mounths.indexOf(mounthsName) + 1;
+        if(mounth<10){
+            mounth = '0' + mounth;
+        }
+        var newDate = day + "." + mounth + "." + year + " " + time;
+        console.log(newDate);
+        console.log(original);
+        for(var i = 0; i< original.length; i++){
+            if(original[i].operationDate === newDate){
+                console.log(original[i].operationTitle);
+                drawModalWindow(original[i].operationTitle,original[i].summ,original[i].curr,newDate);
+            }
+        }
+
+    }
+
+    function drawModalWindow(title, summ, curr, date){
+        var headerDiv = document.getElementById("modalheader");
+        var bodyDiv = document.getElementById("modalbody");       
+        headerDiv.innerHTML ='<h2> Details </h2>';
+        bodyDiv.innerHTML='<p> Transaction description: ' + title +'</p><p> Amount: ' + summ +' ' + curr +'</p><p> Date: ' + date +'</p>'
+           modal.style.display = "block";
     }
 
 function drawGraphic(data){
